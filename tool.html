@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="tool.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="main-content">
+
+    <main>
+        <section class="section sec1 active" id="clock">
+            <div id="clockContainer">
+                <div id="hour"></div>
+                <div id="minute"></div>
+                <div id="second"></div>
+            </div>
+        </section>
+        <section class="section sec2 " id="cloud">
+            <div class="mark">
+                weather of <br><span id="cityname"></span>
+            </div>
+            <div class="search">
+                <form action="" class="search-bar">
+                    <input id="city" type="text" placeholder="search city"
+                        style="padding: 10px 20px; border-color: #071524;">
+                    <button class="button" type="submit" id="submit"
+                        style="padding: 10px 10px; margin-left: 5px; cursor: pointer; border-radius: 50%; border-color: #06121f;"><i
+                            class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="right-about">
+                <div class="about-item">
+                    <div class="abt-text">
+                        <p class="large-text"><span id="temp"></span>*C
+                            <a class="small-text">temp</a>
+                            <i class="fas fa-sun"></i>
+                        </p>
+                        <!-- <p class="small-text">temp <br /></p> -->
+                        <p class="large-text"><span id="feels_like"></span>*C
+                            <a class="small-text">feels like</a>
+                        </p>
+                        <!-- <p class="large-text">40*C
+                            <a class="small-text">temp</a>
+                        </p> -->
+
+
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="abt-text">
+                        <p class="large-text"><span id="humidity"></span>%
+                            <a class="small-text">humidity<i class="fas fa-water"></i></a>
+
+                        </p>
+
+                        <p class="large-text"><span id="cloud_pct"></span>
+                            <a class="small-text">cloud pct</a>
+                        </p>
+
+                        <!-- <p class="large-text">40*C
+                            <a class="small-text">temp</a>
+                        </p> -->
+
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="abt-text">
+                        <p class="large-text"><span id="wind_speed"></span>
+                            <a class="small-text">wind speed <i class="fas fa-wind"></i> (km/hr)</a>
+                        </p>
+                        <p class="large-text"><span id="wind_degrees"></span>
+                            <a class="small-text">direction</a>
+                        </p>
+
+
+
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="abt-text">
+                        <!-- <p class="large-text"><span id="sunrise"></span>
+                            <a class="small-text">sunrise</a>
+                        </p>
+                        <p class="large-text"><span id="sunset"></span>
+                            <a class=" small-text">sunset</a>
+                        </p> -->
+                        <p class="large-text"><span id="min_temp"></span>*C
+                            <a class="small-text">min temp</a>
+                        </p>
+                        <p class="large-text"><span id="max_temp"></span>*C
+                            <a class="small-text">max temp</a>
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="section sec3 " id="alarm">
+            <div class="mark-country" class="large-text">
+                World clock <br><span id="country"></span>
+            </div>
+            <!-- <div class="search">
+                <form action="" class="search-bar">
+                    <input id="" type="text" placeholder="search city"
+                        style="padding: 10px 20px; border-color: #071524;">
+                    <button class="button" type="submit" id=""
+                        style="padding: 10px 10px; margin-left: 5px; cursor: pointer; border-radius: 50%; border-color: #06121f;">
+                        <i class="fas fa-search"></i></button>
+                </form>
+            </div> -->
+            <div class="right-about">
+
+                <div class="about-item">
+                    <div class="abt-text">
+                        <p class="large-text">USA</p>
+                        <br>
+                        <br>
+                        <!-- <p class="small-text">time :-</p> -->
+                        <p class="small-text" id="usa">
+                        </p>
+                        <br>
+                        <!-- <p class="small-text">date :- -->
+                        <p class="small-text" id="usa1">
+
+                        </p>
+                        </p>
+
+
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="abt-text">
+                        <p class="large-text">EUROPE</p>
+                        <br>
+                        <br>
+                        <!-- <p class="small-text">time :-</p> -->
+                        <p class="small-text" id="europe"></p>
+                        <br>
+                        <!-- <p class="small-text">date :-</p> -->
+                        <p class="small-text" id="europe1"></p>
+
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="abt-text">
+                        <p class="large-text">INDIA</p>
+                        <br>
+                        <br>
+                        <!-- <p class="small-text">time :-</p> -->
+                        <p class="small-text" id="india"></p>
+                        <br>
+                        <!-- <p class="small-text">date :-</p> -->
+                        <p class="small-text" id="india1"></p>
+
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="abt-text-alarm">
+                        <p class="large-text">set an alarm</p>
+
+                        <img src="icons8-alarm-50.png" height="50px" width="50px" style="justify-content: center;">
+                        <h2>00:00:00</h2>
+                        <div class="wrapper">
+
+
+                            <div class="column">
+                                <select name="" id="">
+                                    <option value="hrs" selected hidden>HOUR</option>
+                                </select>
+                            </div>
+                            <div class="column">
+                                <select name="" id="">
+                                    <option value="min" selected hidden>MINUTES</option>
+                                </select>
+                            </div>
+                            <div class="column">
+                                <select name="" id="">
+                                    <option value="AM/PM" selected hidden>AM/PM</option>
+
+                                </select>
+                            </div>
+                            <button class="set-alarm">set alarm</button>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+        </section>
+    </main>
+    <div class="controlls">
+        <div class="control  control-1 active-btn" data-id="clock">
+            <i class="fas fa-clock"></i>
+        </div>
+        <div class="control control-2 " data-id="cloud">
+            <i class="fas fa-cloud"></i>
+        </div>
+        <div class="control control-3 " data-id="alarm">
+            <i class="fas fa-globe"></i>
+        </div>
+
+    </div>
+
+    <!-- <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div> -->
+    <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Data </i> analyst.', '<i>Problem </i> Solver.', '<i>Web </i> developer.'],
+            typeSpeed: 50,
+        });
+    </script> -->
+    <script src="tool.js"></script>
+    <script src="index.js"></script>
+    <script src="weather.js"></script>
+    <script src="alarm.js"></script>
+    <script src="worldclock.js"></script>
+</body>
+
+</html>
